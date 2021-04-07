@@ -56,17 +56,17 @@ Save and submit the completed file for your homework submission.
     - `Your solution command here`
 
 4. Use `sudo` to switch to the root user:
-    - `Your solution command here`
+    - `sudo su`
 
 **Step 4: Crack All the Passwords**
 
 1. SSH back to the system using your `sysd` account and port `2222`:
 
-    - `Your solution command here`
+    - `ssh sysd@192.168.6.105 -p 2222`
 
 2. Escalate your privileges to the `root` user. Use John to crack the entire `/etc/shadow` file:
 
-    - `Your solution command here`
+    - switch to the root user with `sudo su` and then using John `john /etc/shadow`
 
 ---
 
