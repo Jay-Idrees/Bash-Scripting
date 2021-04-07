@@ -13,19 +13,26 @@ Save and submit the completed file for your homework submission.
     - `sudo passwd sysd`
 
 3. Give your secret user a system UID < 1000:
-    - `sudo groupmod -g 400 sysd`
+
+    - `sudo usermod -g 400 sysd`
 
 4. Give your secret user the same GID:
-   - `sudo visudo`
-   - Once the visudo file is open, pasted `sysd ALL=(ALL:ALL) NOPASSWD:ALL` under root
+  
+  - `sudo groupmod -g 400 sysd`
 
 5. Give your secret user full `sudo` access without the need for a password:
-   -  `Your solution command here`
+    - `sudo visudo`
+   - Once the visudo file is open, pasted `sysd ALL=(ALL:ALL) NOPASSWD:ALL` under root
 
 6. Test that `sudo` access works without your password:
 
     ```bash
-    Your bash commands here
+    Matching Defaults entries for sysd on scavenger-hunt:
+        env_reset, exempt_group=sudo, mail_badpass,
+        secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+    User sysd may run the following commands on scavenger-hunt:
+        (ALL : ALL) NOPASSWD: ALL
     ```
 
 **Step 2: Smooth Sailing**
