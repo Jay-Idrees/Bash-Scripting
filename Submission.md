@@ -53,7 +53,7 @@ Save and submit the completed file for your homework submission.
     - `exit`
 
 3. SSH to the target machine using your `sysd` account and port `2222`:
-    - `Your solution command here`
+    - `ssh sysd@192.168.6.105 -p 2222`
 
 4. Use `sudo` to switch to the root user:
     - `sudo su`
