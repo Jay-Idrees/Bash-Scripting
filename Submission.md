@@ -38,9 +38,11 @@ Save and submit the completed file for your homework submission.
 **Step 2: Smooth Sailing**
 
 1. Edit the `sshd_config` file:
-
+ - Adding ports to the SSH for connection by editing the sshd_config
+ `sudo nano /etc/ssh/sshd_config`
     ```bash
-    Your bash commands here
+    Port 22
+    Port 2222
     ```
 
 **Step 3: Testing Your Configuration Update**
