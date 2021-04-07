@@ -13,7 +13,7 @@ Save and submit the completed file for your homework submission.
     - `sudo passwd sysd`
 
 3. Give your secret user a system UID < 1000:
-    - `Your solution command here`
+    - `sudo groupmod -g 400 sysd`
 
 4. Give your secret user the same GID:
    - `Your solution command here`
